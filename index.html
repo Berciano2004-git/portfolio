@@ -61,7 +61,7 @@
           <div class="col-lg-5 order-1 order-lg-2">
             <div class="portrait-wrap reveal">
               <div class="portrait-backdrop" aria-hidden="true"></div>
-              <img class="portrait" src="https://raw.githubusercontent.com/Berciano2004-git/portfolio/refs/heads/main/foto-carlos.jpg" alt="Fotografía de Carlos Berciano Cabezas">
+              <img class="portrait" src="assets/foto-carlos.jpg" alt="Fotografía de Carlos Berciano Cabezas">
               <div class="portrait-caption"><span class="caption-line"></span><span>PORTFOLIO PROFESIONAL · 2026</span></div>
             </div>
           </div>
@@ -311,17 +311,60 @@
 
     <section id="contacto" class="section-space section-alt">
       <div class="container">
-        <div class="contact-panel surface-card reveal">
+        <div class="section-heading reveal">
           <span class="section-index">06 / CONTACTO</span>
           <h2>Hablemos de <span class="text-green">tu próximo proyecto.</span></h2>
-          <p>Estoy abierto a conocer nuevas oportunidades, colaborar y seguir aprendiendo.</p>
-          <div class="contact-actions">
-            <a class="contact-method" href="tel:+34692171108"><i class="bi bi-telephone"></i><span><small>TELÉFONO</small>+34 692 17 11 08</span></a>
-            <a class="contact-method" href="https://github.com/Berciano2004-git" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i><span><small>GITHUB</small>Berciano2004-git</span></a>
+          <p>Rellena el formulario y recibiré tu mensaje en mi correo electrónico.</p>
+        </div>
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-5">
+            <div class="surface-card contact-info-card reveal h-100">
+              <span class="contact-kicker">¿TIENES UNA PROPUESTA?</span>
+              <h3>Estoy disponible para escuchar nuevas ideas y oportunidades.</h3>
+              <p>Si quieres contactar conmigo por un proyecto, una oportunidad profesional o cualquier otra consulta, puedes escribirme mediante el formulario.</p>
+              <div class="contact-detail"><i class="bi bi-envelope"></i><div><small>CORREO ELECTRÓNICO</small><a href="mailto:carlos.berciano.cabezas.04@gmail.com">carlos.berciano.cabezas.04@gmail.com</a></div></div>
+              <div class="contact-detail"><i class="bi bi-github"></i><div><small>GITHUB</small><a href="https://github.com/Berciano2004-git" target="_blank" rel="noopener noreferrer">Berciano2004-git</a></div></div>
+              <div class="contact-detail"><i class="bi bi-geo-alt"></i><div><small>UBICACIÓN</small><span>Sevilla, España</span></div></div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <form id="contactForm" class="surface-card contact-form reveal" action="https://formsubmit.co/carlos.berciano.cabezas.04@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="Nuevo mensaje desde el portfolio de Carlos Berciano">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="true">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="contactName">Nombre</label>
+                  <input class="form-control" type="text" id="contactName" name="nombre" autocomplete="given-name" placeholder="Tu nombre" required minlength="2">
+                  <div class="invalid-feedback">Escribe tu nombre (al menos 2 caracteres).</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="contactSurname">Apellidos</label>
+                  <input class="form-control" type="text" id="contactSurname" name="apellidos" autocomplete="family-name" placeholder="Tus apellidos" required minlength="2">
+                  <div class="invalid-feedback">Escribe tus apellidos.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="contactEmail">Correo electrónico</label>
+                  <input class="form-control" type="email" id="contactEmail" name="email" autocomplete="email" placeholder="nombre@ejemplo.com" required>
+                  <div class="invalid-feedback">Introduce una dirección de correo válida.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="contactReason">Motivo del contacto</label>
+                  <textarea class="form-control" id="contactReason" name="motivo" rows="5" placeholder="Cuéntame brevemente el motivo de tu mensaje..." required minlength="10"></textarea>
+                  <div class="invalid-feedback">Cuéntame un poco más (mínimo 10 caracteres).</div>
+                </div>
+                <div class="col-12 d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-3 pt-2">
+                  <p class="form-privacy mb-0"><i class="bi bi-lock"></i> Tus datos se utilizarán únicamente para responder a tu consulta.</p>
+                  <button class="btn btn-green btn-lg" type="submit">Enviar mensaje <i class="bi bi-send ms-1"></i></button>
+                </div>
+                <div class="col-12"><p id="formStatus" class="form-status mb-0" role="status" aria-live="polite"></p></div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="portfolio-footer">

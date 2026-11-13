@@ -1,5 +1,5 @@
 # Portfolio de Carlos Berciano Cabezas
-Enlace directo github pages: https://berciano2004-git.github.io/portfolio/
+
 Portfolio personal actualizado sobre la base de los archivos originales.
 
 ## Tecnologías
@@ -24,3 +24,6 @@ Se ha utilizado asistencia de IA para revisar y actualizar parte del HTML, CSS y
 
 ## Contenido del portfolio
 La experiencia profesional incluye E-računi (Eslovenia), Cartake Back y una experiencia de un mes en hostelería. Las certificaciones de socorrista y monitor de natación aparecen separadas de la experiencia laboral. Las actividades de JavaScript, DOM y Apache se identifican como prácticas formativas, no como empleos.
+
+\n## Formulario de contacto
+El formulario utiliza FormSubmit para enviar mensajes a `carlos.berciano.cabezas.04@gmail.com`. En el primer envío, el servicio puede enviar un correo de activación a esa dirección. Hay que abrirlo y confirmar la activación para empezar a recibir los mensajes. Al tratarse de un servicio externo, revisa sus condiciones y política de privacidad antes de publicar el formulario.

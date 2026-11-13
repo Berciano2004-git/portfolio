@@ -161,3 +161,24 @@ a { color: inherit; }
 .certificate-icon { flex: 0 0 38px; height: 38px; display: grid; place-items: center; color: var(--green); background: rgba(131,224,162,.09); border-radius: 9px; }
 .certificate-entry strong { display: block; color: var(--text); font-size: .95rem; margin-bottom: 4px; }
 .certificate-entry p { margin: 0; color: var(--muted); font-size: .82rem; }
+
+/* Formulario de contacto */
+.contact-info-card, .contact-form { padding: clamp(24px, 4vw, 38px); }
+.contact-kicker { color: var(--green); font-size: .7rem; letter-spacing: .15em; font-weight: 700; }
+.contact-info-card h3 { font: 600 clamp(1.45rem, 3vw, 2rem)/1.25 var(--font-heading); margin: 18px 0 13px; }
+.contact-info-card > p { color: var(--muted); font-size: .94rem; margin-bottom: 30px; }
+.contact-detail { display: flex; align-items: center; gap: 14px; padding: 15px 0; border-top: 1px solid var(--border); }
+.contact-detail > i { color: var(--green); font-size: 1.25rem; width: 24px; text-align: center; }
+.contact-detail small { display: block; color: var(--green); font-size: .62rem; letter-spacing: .12em; margin-bottom: 3px; }
+.contact-detail a, .contact-detail span { color: var(--text); text-decoration: none; font-size: .88rem; overflow-wrap: anywhere; }
+.contact-detail a:hover { color: var(--green); }
+.contact-form .form-label { color: #dce7de; font-size: .88rem; font-weight: 600; margin-bottom: 8px; }
+.contact-form .form-control { background: #111a14; border: 1px solid rgba(180,215,190,.2); border-radius: 8px; color: var(--text); padding: 12px 14px; }
+.contact-form .form-control::placeholder { color: #748278; }
+.contact-form .form-control:focus { background: #111a14; color: var(--text); border-color: var(--green); box-shadow: 0 0 0 .2rem rgba(131,224,162,.12); }
+.contact-form .form-control.is-invalid { border-color: #e18b8b; }
+.contact-form .invalid-feedback { color: #f0a5a5; }
+.form-privacy { color: #94a397; font-size: .76rem; }
+.form-privacy i { color: var(--green); margin-right: 5px; }
+.form-status { color: var(--green); font-size: .85rem; }
+@media (max-width: 575.98px) { .contact-form .btn { width: 100%; } }

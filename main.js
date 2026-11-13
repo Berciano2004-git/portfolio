@@ -49,4 +49,27 @@ document.addEventListener("DOMContentLoaded", () => {
       roleElement.textContent = roles[roleIndex];
     }, 2600);
   }
+
+  // Validación del formulario antes de enviarlo al servicio de recepción.
+  const contactForm = document.getElementById("contactForm");
+  const formStatus = document.getElementById("formStatus");
+  if (contactForm) {
+    contactForm.addEventListener("submit", (event) => {
+      if (!contactForm.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+        contactForm.classList.add("was-validated");
+        if (formStatus) formStatus.textContent = "Revisa los campos marcados antes de enviar el mensaje.";
+      } else {
+        contactForm.classList.add("was-validated");
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.innerHTML = 'Enviando... <i class="bi bi-hourglass-split ms-1"></i>';
+        }
+        if (formStatus) formStatus.textContent = "Enviando tu mensaje...";
+      }
+    });
+  }
+
 });
