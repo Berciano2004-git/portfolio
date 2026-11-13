@@ -2,6 +2,8 @@
 // Menú, animaciones accesibles y pequeños detalles de interfaz.
 
 document.addEventListener("DOMContentLoaded", () => {
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
   // Año automático del pie de página.
   const year = document.getElementById("currentYear");
   if (year) year.textContent = new Date().getFullYear();
@@ -19,6 +21,32 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  // Navegación interna robusta: enlaces del menú, botones y enlaces del pie.
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const href = link.getAttribute("href");
+      if (!href || href === "#") return;
+      const target = document.getElementById(decodeURIComponent(href.slice(1)));
+      if (!target) return;
+
+      event.preventDefault();
+
+      // En móvil, cerrar primero el menú para evitar que quede superpuesto.
+      if (navbar && window.innerWidth < 992 && window.bootstrap) {
+        const collapse = bootstrap.Collapse.getOrCreateInstance(navbar, { toggle: false });
+        collapse.hide();
+      }
+
+      // Mostrar los elementos de la sección destino aunque el observador aún no los haya procesado.
+      target.querySelectorAll(".reveal").forEach((item) => item.classList.add("is-visible"));
+      target.classList.add("is-visible");
+
+      target.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+      if (history.pushState) history.pushState(null, "", href);
+      else window.location.hash = href;
+    });
+  });
 
   // Mostrar elementos al entrar en pantalla. Si no existe IntersectionObserver,
   // el contenido permanece visible para no perjudicar la navegación.
@@ -40,7 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Rotación sencilla de especialidades. Se desactiva con movimiento reducido.
   const roleElement = document.querySelector(".type-writer");
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (roleElement && !reduceMotion) {
     const roles = ["Estudiante DAW", "Desarrollo web", "Técnico informático"];
     let roleIndex = 0;

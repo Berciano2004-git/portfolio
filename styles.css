@@ -182,3 +182,9 @@ a { color: inherit; }
 .form-privacy i { color: var(--green); margin-right: 5px; }
 .form-status { color: var(--green); font-size: .85rem; }
 @media (max-width: 575.98px) { .contact-form .btn { width: 100%; } }
+
+/* Evita que la barra fija tape los títulos al navegar por anclas. */
+section[id] { scroll-margin-top: 88px; }
+@media (max-width: 991.98px) {
+  section[id] { scroll-margin-top: 76px; }
+}
