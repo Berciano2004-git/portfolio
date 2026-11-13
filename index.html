@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio profesional de Carlos Berciano Cabezas, técnico informático y estudiante de Desarrollo de Aplicaciones Web.">
+  <meta name="theme-color" content="#101510">
+  <title>Carlos Berciano Cabezas | Portfolio</title>
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-smooth-scroll="true" tabindex="0">
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top portfolio-nav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#inicio" aria-label="Ir al inicio">CB<span class="brand-dot">.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-green btn-sm px-3" href="#contacto">Contactar <i class="bi bi-arrow-up-right"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="inicio" class="hero-section section-space">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7 order-2 order-lg-1">
+            <p class="eyebrow reveal"><span class="status-dot"></span> DISPONIBLE PARA NUEVOS RETOS</p>
+            <h1 class="hero-title reveal">Carlos Berciano<br><span class="text-green">Cabezas.</span></h1>
+            <p class="hero-role reveal">Técnico informático <span class="role-divider">/</span> <span class="type-writer">Estudiante DAW</span></p>
+            <p class="hero-copy reveal">Me interesa crear soluciones digitales útiles, cuidar los detalles y seguir creciendo en el desarrollo web. Combino mi formación en DAW con experiencia en soporte técnico, mantenimiento informático y atención al usuario.</p>
+            <div class="d-flex flex-wrap gap-3 reveal">
+              <a class="btn btn-green btn-lg" href="#proyectos">Ver proyectos <i class="bi bi-arrow-down-right ms-1"></i></a>
+              <a class="btn btn-outline-light btn-lg btn-outline-soft" href="#contacto">Contactar</a>
+            </div>
+            <div class="hero-meta reveal">
+              <span><i class="bi bi-geo-alt"></i> Sevilla, España</span>
+              <span><i class="bi bi-code-slash"></i> Desarrollo web · Soporte IT</span>
+            </div>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2">
+            <div class="portrait-wrap reveal">
+              <div class="portrait-backdrop" aria-hidden="true"></div>
+              <img class="portrait" src="assets/foto-carlos.jpg" alt="Fotografía de Carlos Berciano Cabezas">
+              <div class="portrait-caption"><span class="caption-line"></span><span>PORTFOLIO PROFESIONAL · 2026</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section-space">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index">01 / PERFIL</span>
+          <h2>Sobre <span class="text-green">mí</span></h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="surface-card about-main reveal h-100">
+              <p class="lead-copy">Soy técnico informático y actualmente estoy ampliando mi formación con el Grado Superior en Desarrollo de Aplicaciones Web.</p>
+              <p>He trabajado en tareas de instalación y configuración de sistemas, mantenimiento y reparación de equipos, soporte a usuarios y atención al cliente. Me considero una persona responsable, adaptable y con facilidad para aprender y resolver problemas.</p>
+              <p>Mi objetivo es seguir desarrollando mis conocimientos técnicos y aplicarlos a proyectos web cada vez más completos.</p>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="row g-3 h-100">
+              <div class="col-12">
+                <div class="surface-card mini-card reveal">
+                  <i class="bi bi-window-stack"></i>
+                  <div><h3>Desarrollo web</h3><p>Formación y práctica con tecnologías frontend, programación y bases de datos.</p></div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="surface-card mini-card reveal">
+                  <i class="bi bi-pc-display"></i>
+                  <div><h3>Sistemas y soporte</h3><p>Instalación, configuración, mantenimiento y resolución de incidencias informáticas.</p></div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="surface-card mini-card reveal">
+                  <i class="bi bi-people"></i>
+                  <div><h3>Atención al usuario</h3><p>Comunicación con clientes y apoyo en procesos administrativos y comerciales.</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section-space section-alt">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index">02 / COMPETENCIAS</span>
+          <h2>Habilidades <span class="text-green">y conocimientos</span></h2>
+          <p>Competencias desarrolladas durante mi formación, experiencia profesional y certificaciones.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="surface-card skill-card reveal h-100">
+              <div class="skill-icon"><i class="bi bi-code-slash"></i></div>
+              <h3>Desarrollo de aplicaciones</h3>
+              <div class="skill-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Java</span><span>SQL</span><span>Bases de datos</span></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="surface-card skill-card reveal h-100">
+              <div class="skill-icon"><i class="bi bi-pc-display"></i></div>
+              <h3>Sistemas y soporte IT</h3>
+              <div class="skill-tags"><span>Sistemas operativos</span><span>Configuración de servicios</span><span>Mantenimiento</span><span>Reparación de equipos</span><span>Gestión web</span><span>Resolución de incidencias</span></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="surface-card skill-card reveal h-100">
+              <div class="skill-icon"><i class="bi bi-life-preserver"></i></div>
+              <h3>Socorrismo y seguridad acuática</h3>
+              <div class="skill-tags"><span>Socorrismo</span><span>Prevención</span><span>Vigilancia acuática</span><span>Seguridad de usuarios</span><span>Intervención en emergencias</span></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="surface-card skill-card reveal h-100">
+              <div class="skill-icon"><i class="bi bi-water"></i></div>
+              <h3>Enseñanza de natación</h3>
+              <div class="skill-tags"><span>Monitor de natación</span><span>Actividades acuáticas</span><span>Aprendizaje técnico</span><span>Adaptación a niveles</span></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="surface-card skill-card reveal h-100">
+              <div class="skill-icon"><i class="bi bi-headset"></i></div>
+              <h3>Atención y comunicación</h3>
+              <div class="skill-tags"><span>Atención telefónica</span><span>Soporte a usuarios</span><span>Gestión de clientes</span><span>Trabajo en equipo</span></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="surface-card skill-card reveal h-100">
+              <div class="skill-icon"><i class="bi bi-lightning-charge"></i></div>
+              <h3>Competencias personales</h3>
+              <div class="skill-tags"><span>Responsabilidad</span><span>Disciplina</span><span>Adaptabilidad</span><span>Aprendizaje rápido</span><span>Resolución de problemas</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section-space">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index">03 / TRABAJO</span>
+          <h2>Proyectos y <span class="text-green">prácticas DAW</span></h2>
+          <p>Proyectos personales y actividades prácticas realizadas durante mi formación. Los trabajos académicos se presentan como prácticas formativas.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <article class="surface-card project-card reveal h-100">
+              <div class="project-visual project-visual-game"><span class="project-number">01</span><i class="bi bi-magic"></i><span class="visual-label">THREE.JS · MULTIPLAYER</span></div>
+              <div class="project-body">
+                <div class="project-topline"><span class="project-type">PROYECTO PERSONAL</span><span class="project-year">2026</span></div>
+                <h3>Elemental Royale</h3>
+                <p>Juego battle royale 3D para navegador en el que pequeños magos reúnen cristales, combinan elementos y compiten en una isla cuyo mapa se reduce progresivamente. Incluye multijugador mediante WebSocket, simulación autoritativa en servidor y bots.</p>
+                <div class="skill-tags"><span>JavaScript</span><span>Three.js</span><span>Node.js</span><span>WebSocket</span></div>
+                <a class="project-link" href="https://github.com/Berciano2004-git/elemental-royale" target="_blank" rel="noopener noreferrer">Ver repositorio <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-6">
+            <article class="surface-card project-card reveal h-100">
+              <div class="project-visual project-visual-code"><span class="project-number">02</span><i class="bi bi-braces"></i><span class="visual-label">JAVASCRIPT · LÓGICA</span></div>
+              <div class="project-body">
+                <div class="project-topline"><span class="project-type">PRÁCTICA FORMATIVA</span><span class="project-year">DAW</span></div>
+                <h3>Fundamentos y lógica con JavaScript</h3>
+                <p>Actividades de programación con variables, tipos de datos, operadores, conversiones, entrada y salida de información, validaciones y resolución de ejercicios de lógica mediante funciones.</p>
+                <div class="skill-tags"><span>JavaScript</span><span>Funciones</span><span>Condicionales</span><span>Bucles</span><span>Validaciones</span></div>
+                <span class="project-note">Trabajo académico realizado durante el módulo de Desarrollo Web en Entorno Cliente.</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-6">
+            <article class="surface-card project-card reveal h-100">
+              <div class="project-visual project-visual-dom"><span class="project-number">03</span><i class="bi bi-window"></i><span class="visual-label">HTML · DOM · EVENTOS</span></div>
+              <div class="project-body">
+                <div class="project-topline"><span class="project-type">PRÁCTICA FORMATIVA</span><span class="project-year">DAW</span></div>
+                <h3>Interacción web con DOM</h3>
+                <p>Desarrollo de páginas HTML conectadas con JavaScript para seleccionar y modificar elementos del documento, responder a eventos, actualizar contenido y dar funcionalidad a diferentes ejercicios.</p>
+                <div class="skill-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>DOM</span><span>Eventos</span></div>
+                <span class="project-note">Práctica de manipulación del DOM y creación de páginas interactivas.</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-6">
+            <article class="surface-card project-card reveal h-100">
+              <div class="project-visual project-visual-server"><span class="project-number">04</span><i class="bi bi-shield-lock"></i><span class="visual-label">APACHE · LINUX · HTTPS</span></div>
+              <div class="project-body">
+                <div class="project-topline"><span class="project-type">PRÁCTICA FORMATIVA</span><span class="project-year">DAW</span></div>
+                <h3>Configuración y seguridad de servidor web</h3>
+                <p>Prácticas con Apache en Linux: identificación de módulos, elección y configuración de certificados, redirecciones HTTP 301, protección de directorios mediante autenticación, reglas de cortafuegos UFW y revisión de registros del servidor.</p>
+                <div class="skill-tags"><span>Apache</span><span>Linux</span><span>HTTPS</span><span>.htaccess</span><span>UFW</span><span>Logs</span></div>
+                <span class="project-note">Actividades de despliegue y seguridad de aplicaciones web.</span>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="surface-card project-callout reveal mt-4">
+          <span class="section-index">REPOSITORIOS</span>
+          <h3>Más código y proyectos en GitHub</h3>
+          <p>En mi perfil iré reuniendo proyectos personales y ejercicios de formación.</p>
+          <a class="btn btn-green" href="https://github.com/Berciano2004-git" target="_blank" rel="noopener noreferrer">Visitar GitHub <i class="bi bi-github ms-1"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section-space section-alt">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index">04 / TRAYECTORIA</span>
+          <h2>Experiencia <span class="text-green">profesional</span></h2>
+        </div>
+        <div class="experience-list">
+          <article class="experience-item reveal">
+            <div class="experience-marker"></div>
+            <div class="experience-date">Eslovenia</div>
+            <div class="experience-content surface-card">
+              <h3>E-računi</h3>
+              <p>Experiencia profesional en Eslovenia realizando instalación de sistemas operativos, configuración de servicios y datáfonos, reparación y mantenimiento de equipos informáticos. Esta etapa me permitió trabajar en un entorno internacional y reforzar mi autonomía y capacidad de adaptación.</p>
+              <span class="experience-category">Eslovenia · Soporte técnico · Sistemas</span>
+            </div>
+          </article>
+          <article class="experience-item reveal">
+            <div class="experience-marker"></div>
+            <div class="experience-date">España</div>
+            <div class="experience-content surface-card">
+              <h3>Cartake Back</h3>
+              <p>Atención telefónica a clientes y usuarios de toda España en el ámbito de desguaces y compraventa de vehículos. Gestión de bases de datos de clientes, apoyo en licitaciones públicas y acompañamiento a reuniones para conocer de primera mano los procesos comerciales.</p>
+              <span class="experience-category">Atención al cliente · Gestión de datos</span>
+            </div>
+          </article>
+          <article class="experience-item reveal">
+            <div class="experience-marker"></div>
+            <div class="experience-date">Hostelería</div>
+            <div class="experience-content surface-card">
+              <h3>Apoyo en cocina y limpieza</h3>
+              <p>Experiencia de un mes realizando tareas de limpieza y apoyo en cocina.</p>
+              <span class="experience-category">Hostelería</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacion" class="section-space">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index">05 / APRENDIZAJE</span>
+          <h2>Formación y <span class="text-green">certificaciones</span></h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="surface-card education-card reveal h-100">
+              <div class="education-entry"><span class="education-symbol"><i class="bi bi-mortarboard"></i></span><div><span class="entry-label">EN CURSO</span><h3>Grado Superior en Desarrollo de Aplicaciones Web</h3><p>Formación en desarrollo de aplicaciones web.</p></div></div>
+              <div class="education-entry"><span class="education-symbol"><i class="bi bi-pc-display-horizontal"></i></span><div><span class="entry-label">COMPLETADO</span><h3>Técnico en Sistemas Microinformáticos y Redes</h3><p>Ciclo formativo de grado medio.</p></div></div>
+              <div class="education-entry"><span class="education-symbol"><i class="bi bi-book"></i></span><div><span class="entry-label">COMPLETADO</span><h3>Educación Secundaria Obligatoria</h3><p>ESO.</p></div></div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="surface-card credentials-card reveal h-100">
+              <h3>Certificaciones deportivas y acuáticas</h3>
+              <div class="certificate-entry">
+                <span class="certificate-icon"><i class="bi bi-life-preserver"></i></span>
+                <div><strong>Socorrista</strong><p>Formación vinculada a la prevención de riesgos en instalaciones acuáticas, vigilancia de usuarios y actuación ante situaciones de emergencia.</p></div>
+              </div>
+              <div class="certificate-entry">
+                <span class="certificate-icon"><i class="bi bi-water"></i></span>
+                <div><strong>Monitor de natación</strong><p>Formación orientada a la enseñanza y acompañamiento en actividades de natación, adaptación de ejercicios y mejora de habilidades acuáticas.</p></div>
+              </div>
+              <hr>
+              <h3>Idiomas</h3>
+              <p><span class="language-name">Francés</span><span class="language-level">B1 acreditado · nivel práctico aprox. B2</span></p>
+              <p><span class="language-name">Inglés</span><span class="language-level">Nivel aproximado B2 · sin certificación oficial</span></p>
+              <hr>
+              <h3>Otros datos</h3>
+              <p class="small-muted">Carnet de conducir B · Disponibilidad inmediata</p>
+            </div>
+          </div>
+        </div>
+        <div class="cv-strip surface-card reveal mt-4">
+          <div><span class="section-index">CURRÍCULUM</span><h3>¿Quieres conocer mi trayectoria completa?</h3><p>Consulta mi currículum en formato PDF.</p></div>
+          <a class="btn btn-green" href="assets/CV_Carlos_Berciano_Cabezas.pdf" target="_blank" rel="noopener noreferrer">Ver CV <i class="bi bi-file-earmark-pdf ms-1"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section-space section-alt">
+      <div class="container">
+        <div class="contact-panel surface-card reveal">
+          <span class="section-index">06 / CONTACTO</span>
+          <h2>Hablemos de <span class="text-green">tu próximo proyecto.</span></h2>
+          <p>Estoy abierto a conocer nuevas oportunidades, colaborar y seguir aprendiendo.</p>
+          <div class="contact-actions">
+            <a class="contact-method" href="tel:+34692171108"><i class="bi bi-telephone"></i><span><small>TELÉFONO</small>+34 692 17 11 08</span></a>
+            <a class="contact-method" href="https://github.com/Berciano2004-git" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i><span><small>GITHUB</small>Berciano2004-git</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="portfolio-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <a class="footer-brand" href="#inicio">Carlos Berciano Cabezas<span>.</span></a>
+      <p>© <span id="currentYear">2026</span> · Portfolio profesional</p>
+      <a href="#inicio" class="back-top">Volver arriba <i class="bi bi-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
